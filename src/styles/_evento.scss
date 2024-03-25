@@ -1,0 +1,72 @@
+@use 'variaveis';
+
+.evento {
+
+    padding: 80px 0;
+    max-height: 742px;
+    height: 742px;
+
+    .container {
+        display: flex;
+        // gap: 100px;
+        justify-content: space-between;
+    }
+
+    &--hero {
+        background-image: linear-gradient(variaveis.$blue1, variaveis.$blue2);
+    }
+
+    &--baloes {
+        background-image: linear-gradient(variaveis.$blue2, variaveis.$blue3);
+    }
+
+    &--local {
+        background-color: variaveis.$blue3;
+    }
+
+    &--contato {
+        background-color: variaveis.$red;
+
+        img {
+            width: 50px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            div {
+                margin: 0 auto;
+            }
+        }
+    }
+
+    &--image-left {
+        .container {
+            flex-direction: row-reverse;
+        }
+    }
+
+    &__detalhes {
+        margin: auto 0;
+        text-align: center;
+        padding-left: 15%;
+        padding-right: 15%;
+        
+        &__titulo {
+            font-size: 32px;
+            font-weight: bold;
+        }
+        
+        &__descricao {
+            font-size: 20px;
+            font-weight: bold;
+            color: #fff;
+            margin: 20px 0;
+        }
+    } 
+    
+    &__imagem {
+        max-width: 360px;
+    }
+}
