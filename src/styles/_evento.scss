@@ -2,16 +2,6 @@
 
 .evento {
 
-    padding: 80px 0;
-    max-height: 742px;
-    height: 742px;
-
-    .container {
-        display: flex;
-        // gap: 100px;
-        justify-content: space-between;
-    }
-
     &--hero {
         background-image: linear-gradient(variaveis.$blue1, variaveis.$blue2);
     }
@@ -27,46 +17,36 @@
     &--contato {
         background-color: variaveis.$red;
 
-        img {
-            width: 50px;
-        }
+        #whatsapp_numero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
 
-        .container {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-
-            div {
-                margin: 0 auto;
+            img {
+                width: 50px;
+                margin-right: 10px
             }
         }
     }
 
-    &--image-left {
-        .container {
-            flex-direction: row-reverse;
-        }
-    }
-
     &__detalhes {
-        margin: auto 0;
+
         text-align: center;
-        padding-left: 15%;
-        padding-right: 15%;
+        padding: 20px 10px;
         
         &__titulo {
-            font-size: 32px;
-            font-weight: bold;
+            font-size: 20px;
         }
         
         &__descricao {
-            font-size: 20px;
-            font-weight: bold;
+            margin: 10px 0;
             color: #fff;
-            margin: 20px 0;
+            line-height: 24px;
         }
     } 
     
     &__imagem {
-        max-width: 360px;
+        margin: 0 auto;
+        width: 100%;
     }
 }

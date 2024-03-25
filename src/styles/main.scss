@@ -8,39 +8,18 @@
     font-family: Roboto, sans-serif;
 }
 
-.container {
-    max-width: 1240px;
-    width: 100%;
-    margin: 0 auto;
-}
-
 form {
-
-    font-size: 20px;
-
-    input {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        height: 40px;
-        width: 300px;
-        font-size: 20px;
-    }
-
-    textarea {
-        display: block;
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 300px;
-        font-size: 20px;
-    }
+    padding: 10px;
+    font-size: 18px;
 
     .botao {
         width: 100%;
     }
-
 }
 
-#detalhes_contato {
-    padding-top: 15%;
+input, textarea {
+    width: 100%;
+    font-size: 16px;
+    padding: 7px;
+    margin: 10px 0;
 }
