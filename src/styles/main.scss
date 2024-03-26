@@ -23,3 +23,9 @@ input, textarea {
     padding: 7px;
     margin: 10px 0;
 }
+
+@media (min-width: 960px) {
+    form {
+        padding-top: 80px;
+    }
+}
